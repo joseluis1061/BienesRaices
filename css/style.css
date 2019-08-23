@@ -57,6 +57,10 @@ img{
     display: block!important;
 }
 
+.contenido-centrado{
+    max-width: 800px;
+}
+
 /* Botones */
 .boton{
     color: #ffffff;
@@ -178,7 +182,9 @@ img{
 }
 
 .iconos-caracteristicas{
+    flex: 1;
     list-style: none;
+    max-width: 500px;
     padding: 0;
     display: flex;
     justify-content: space-evenly;
@@ -337,4 +343,11 @@ img{
 
 main h1{
     text-transform: capitalize;
+}
+
+/* Anuncio */
+.resumen-propiedad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
