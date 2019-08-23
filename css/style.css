@@ -272,19 +272,39 @@ img{
 }
 
 .testimonial p{
-    text-align: right;
+    text-align: right;    
 }
 
 .testimonial blockquote::before{
     content: '';
     background-image: url(../img/comilla.svg);
-    width: 4rem;
-    height: 4rem;
+    background-position: center;
+    background-size: cover;
+    width: 3rem;
+    height: 3rem;
     position: absolute;
-    right: 2rem;
+    left: -3rem;
 
 }
 
 .testimonial blockquote{
     position: relative;
+    line-height: 3.5rem;
+}
+
+/* Footer */
+.site-footer{
+    margin: 0;
+    background-color: #333333;
+}
+
+.copyright{
+    margin: 0;
+    color: #ffffff;
+}
+
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
 }
