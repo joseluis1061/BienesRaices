@@ -34,46 +34,51 @@
 
     <h1 class="fw-300 centrar-texto">Contacto </h1>
     <img src="./img/destacada3.jpg" alt="Imagen Anuncio">
-    <h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h1>
     <!-- Inicio formulario -->
 
-    <div class="contenedor contenido-centrado seccion">
-        <form action="" class="borde">
-            <p>Informacion personal</p>
-            <label for="">Nombre:</label><br><input name="firstname" type="text" class="mw seccion"><br>
-            <label for="">Email:</label><br><input name="email" type="text" class="mw seccion"><br>
-            <label for="">Telefono: </label><br><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="mw seccion"><br>
-            <label for="">Mensaje: </label><br><textarea id="msg" class="mw seccion"></textarea><br>
-        </form>
-        
-        <form action="" class="borde">
-            <p>Información sobre Propiedad</p>
-            <label for="">Vende o Compra:</label><br>
-            <input list="browsers" name="browser" class="mw seccion">
-            <datalist id="browsers" class="mw seccion">
-                <option value="Vendo">
-                <option value="Compro">
-            </datalist>
-        </form>
+    <main class="contenedor contenido-centrado seccion">
+            <h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h1>
+            <form action="">
+                <fieldset>
+                    <legend>Informacion personal</legend>
+                    <label for="nombre">Nombre:</label><input type="text" id="nombre" placeholder="Tu nombre">
+                    <label for="email">Nombre:</label><input type="email" id="email" placeholder="Email" required>
+                    <label for="telefono">Telefono: </label><input type="tel" id="telefono" placeholder="Telefono" required>
+                    <label for="mensaje">Mensaje: </label><textarea id="mensaje"></textarea>
+                </fieldset>
 
-        <form action="" class="borde">
-            <p>Contacto</p>
-            <p>Como desea ser Contactado</p>
-            <label for="">Teléfono</label><br> <input type="radio" name="gender" value="telefono" > <br>
-            <label for="">Correo</label><br> <input type="radio" name="gender" value="telefono" > <br>
+                <fieldset>
+                    <legend>Informacion Sobre Propiedad</legend>
+                    <label for="opciones">Vende o Compra:</label>
+                    <select name="" id="opciones">
+                        <option value="" disabled selected>--Seleccione--</option>
+                        <option value="compra">Compra</option>
+                        <option value="vende">Vende</option>
+                    </select>
 
-            <p>Si eligío teléfono, elija la Fecha y Hora</p>
-            <label for="">Fecha:</label><br><input type="date" name="fecha" class="mw seccion"><br>
-            <label for="">Hora:</label><br><input type="time" name="hora" class="mw seccion"><br>
+                    <label for="cantidad">Presupuesto</label>
+                    <input type="number" id="cantidad" min="0">
+                </fieldset>
 
-            <input type="submit" class="boton-verde boton">
-       </form>
-    </div>
-    
-    
-    
+                <fieldset>
+                    <legend>Contacto</legend>
+                    
+                    <label for="telefono">Teléfono</label>
+                    <input type="radio" name="contacto" value="telefono" id="telefono"> 
+                    
+                    <label for="email">Correo</label>
+                    <input type="radio" name="contacto" value="correo" id="email"> 
 
-        
+                    <p>Si eligío teléfono, elija la Fecha y Hora</p>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" min="9:00" max="18:00">
+                </fieldset>
+                <input type="submit" class="boton-verde boton">
+            </form>
+
+    </main>
     <!-- Fin formulario -->
 
     <!-- Inicio del footer -->
