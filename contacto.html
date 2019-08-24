@@ -38,33 +38,33 @@
     <!-- Inicio formulario -->
 
     <div class="contenedor contenido-centrado seccion">
-        <form action="">
+        <form action="" class="borde">
             <p>Informacion personal</p>
-            <label for="">Nombre:</label><br><input name="firstname" type="text" ><br>
-            <label for="">Email:</label><br><input name="email" type="text" ><br>
-            <label for="">Telefono: </label><br><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
-            <label for="">Mensaje: </label><br><textarea id="msg"></textarea><br>
+            <label for="">Nombre:</label><br><input name="firstname" type="text" class="mw seccion"><br>
+            <label for="">Email:</label><br><input name="email" type="text" class="mw seccion"><br>
+            <label for="">Telefono: </label><br><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="mw seccion"><br>
+            <label for="">Mensaje: </label><br><textarea id="msg" class="mw seccion"></textarea><br>
         </form>
         
-        <form action="">
-            <p>Información personal</p>
+        <form action="" class="borde">
+            <p>Información sobre Propiedad</p>
             <label for="">Vende o Compra:</label><br>
-            <input list="browsers" name="browser">
-            <datalist id="browsers">
+            <input list="browsers" name="browser" class="mw seccion">
+            <datalist id="browsers" class="mw seccion">
                 <option value="Vendo">
                 <option value="Compro">
             </datalist>
         </form>
 
-        <form action="">
+        <form action="" class="borde">
             <p>Contacto</p>
             <p>Como desea ser Contactado</p>
             <label for="">Teléfono</label><br> <input type="radio" name="gender" value="telefono" > <br>
             <label for="">Correo</label><br> <input type="radio" name="gender" value="telefono" > <br>
 
             <p>Si eligío teléfono, elija la Fecha y Hora</p>
-            <label for="">Fecha:</label><br><input type="date" name="fecha"><br>
-            <label for="">Hora:</label><br><input type="time" name="hora"><br>
+            <label for="">Fecha:</label><br><input type="date" name="fecha" class="mw seccion"><br>
+            <label for="">Hora:</label><br><input type="time" name="hora" class="mw seccion"><br>
 
             <input type="submit" class="boton-verde boton">
        </form>
