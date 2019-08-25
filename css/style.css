@@ -61,16 +61,6 @@ img{
     max-width: 800px;
 }
 
-.mw{
-    min-width: 100%;
-}
-
-.borde{
-    border: 1px solid #333333;
-    padding: 0.5rem 1rem 2rem 1rem;
-    margin-bottom: 1rem;
-}
-
 /* Botones */
 .boton{
     color: #ffffff;
@@ -81,9 +71,13 @@ img{
     padding: 1rem 3rem;
     display: inline-block;
     text-align: center;
+    border: none;
     /* width:  */
 }
 
+.boton:hover{
+    cursor: pointer;
+}
 .boton-amarillo{
     background-color: #E08709;
 }
@@ -363,6 +357,52 @@ main h1{
 }
 
 /* Contacto */
+.contacto p{
+    font-size: 1.2rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0;
+}
+
+legend{
+    font-size: 2rem;
+    color: #4f4f4f;
+
+}
+
 label{
     display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+input:not([type="submit"]), textarea,
+select{
+    background-color: #e1e1e1;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    border:none;
+    border-radius: 1rem;
+}
+
+input[type="radio"]{
+    width: auto;
+}
+/* Para poder agregar el padding al select */
+select{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+textarea{
+    height: 20rem;
+}
+
+.forma-contacto{
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    /* align-items: center; */
 }
