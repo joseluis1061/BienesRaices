@@ -164,6 +164,31 @@ img{
     color:#71B100;
 }
 
+/* Icono movil menu */
+.mobile-menu img{
+    width: 5rem;
+}
+
+@media (min-width: 768px){
+    .mobile-menu{
+        display: none;
+    }    
+}
+
+.navegacion:target{
+    display: block;
+}
+
+.navegacion{
+    display:none;
+}
+
+@media (min-width: 768px){
+    .navegacion{
+        display: block;
+    }
+}
+
 /* Iconos Nosotros */
 @media (min-width: 768px){
     .iconos-nosotros{
@@ -417,8 +442,6 @@ img{
     background-color: #333333;
     padding: 1rem 0 3rem 0;
 }
-
-
 
 .texto-nosotros blockquote{
     font-weight: 900;
